@@ -15,14 +15,15 @@
 </head>
 <body>
     <main>
+      <div class="custom-container">
         <header>
-            <h1>Faça seu Cadastro</h1>
+            <h1 class="larger-text">Faça seu Cadastro</h1>
         </header>
         
         <form  class="row g-3 needs-validation" novalidate></form>
             <div class="col-md-4">
               <label for="validationCustom01" class="form-label">Primeiro Nome</label>
-              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+              <input type="text" class="form-control" id="validationCustom01" value="" required>
               <div class="valid-feedback">
                 Lindo Nome!
               </div>
@@ -30,7 +31,7 @@
 
             <div class="col-md-4">
               <label for="validationCustom02" class="form-label">Sobrenome</label>
-              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+              <input type="text" class="form-control" id="validationCustom02" value="" required>
               <div class="valid-feedback">
                 Sobrenome Extraordinario!
               </div>
@@ -46,20 +47,48 @@
                 </div>
               </div>
             </div>
-
-            <div class="col-md-6">
+            
+            <div class="col-md-4">
               <label for="validationCustom03" class="form-label">Cidade</label>
-              <input type="text" class="form-control" id="validationCustom03" required>
-              <div class="invalid-feedback">
+              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
                 Coloque uma Cidade Valida
               </div>
             </div>
-
+            
+            <br>
             <div class="col-md-3">
               <label for="validationCustom04" class="form-label">Estado</label>
               <select class="form-select" id="validationCustom04" required>
                 <option selected disabled value="">Escolher...</option>
-                <option>...</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
               </select>
               <div class="invalid-feedback">
                 Selecione um estado válido
@@ -73,6 +102,7 @@
                 Forneça um CEP válido
               </div>
             </div>
+            <br>
 
             <div class="col-12">
               <div class="form-check">
@@ -91,6 +121,7 @@
             </div>
 
           </form>
+        </div>
     </main>
 
 </body>
