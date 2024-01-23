@@ -10,17 +10,18 @@ body {
 }
 
 main {
-    width: 60%; /* Ajuste a largura conforme necessário */
+    width: 30%; /* Ajuste a largura conforme necessário */
     height: 80vh; /* Ajuste a altura conforme necessário */
 }
 
 .custom-container {
     border: 3px solid #000000; 
     padding: 20px; 
-    border-radius: 20px; /* Ajuste o raio da borda conforme necessário */
-    background: rgba(0, 0, 0, 0.8); /* Fundo preto mais opaco (0.8 de opacidade) */
+    border-radius: 20px; 
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .larger-text, .form-label, .invalid-feedback {
-    color: white; /* Cor do texto branco para h1, labels e feedbacks inválidos */
+    color: white; 
 }
+
