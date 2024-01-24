@@ -1,4 +1,3 @@
-// Seu JSON
 var dados = require("./info.json");
 
 function buscarCadastro(nome, email, telefone, cep) {
