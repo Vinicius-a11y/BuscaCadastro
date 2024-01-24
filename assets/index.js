@@ -2,7 +2,6 @@
 var dados = require("./info.json");
 
 function buscarCadastro(nome, email, telefone, cep) {
-	// Obtenha o índice do usuário com base no nome fornecido (pode ser modificado conforme necessário)
 	var indiceUsuario = dados.findIndex(function (usuario) {
 		return usuario.nome === nome;
 	});
