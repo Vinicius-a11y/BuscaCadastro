@@ -1,26 +1,24 @@
-var dados = require("./info.json");
+const dados = require("./info.json");
 
-function buscarCadastro(nome, email, telefone, cep) {
-	var indiceUsuario = dados.findIndex(function (usuario) {
-		return usuario.nome === nome;
-	});
+function buscaCad() {
+	const nome = document.getElementById("nomeId").value;
+	const email = document.getElementById("emailCad").value;
+	const telefone = document.getElementById("telefoneCad").value;
+	const cep = document.getElementById("cepCad").value;
 
-	if (indiceUsuario === -1) {
-		console.log("Usuário não encontrado");
-		return;
+	const usuario = dados.find((data) => data.nome === nome && data.email === email && data.telefone === telefone && data.cep === cep);
+
+	if (usuario) {
+		document.getElementById("nomeId").value = usuario.nome;
+		document.getElementById("emailCad").value = usuario.email;
+		document.getElementById("telefoneCad").value = usuario.telefone;
+		document.getElementById("cepCad").value = usuario.cep;
+	} else {
+		alert("Cadastro não encontrado");
 	}
-
-	var nomeInput = document.getElementById("nomeId");
-	var emailInput = document.getElementById("emailCad");
-	var telefoneInput = document.getElementById("telefoneCad");
-	var cepInput = document.getElementById("cepCad");
-
-	nomeInput.value = dados[indiceUsuario].nome;
-	emailInput.value = dados[indiceUsuario].email;
-	telefoneInput.value = dados[indiceUsuario].telefone[0];
-	cepInput.value = dados[indiceUsuario].endereco.cep;
 }
 
-window.onload = function () {
-	buscarCadastro();
-};
+document.querySelector("form").addEventListener("submit", function (evento) {
+	evento.preventDefault();
+	buscaCad();
+});
